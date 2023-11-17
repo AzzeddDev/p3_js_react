@@ -1,0 +1,138 @@
+.geo-section {
+  background-color: $bg-gray;
+}
+
+.img-resto {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.btn-brackets {
+  display: inherit;
+  position: relative;
+  width: fit-content;
+}
+
+.btn-brackets:hover:before {
+  content: "[";
+  display: inline-block;
+  left: -4px;
+  position: absolute;
+}
+
+.btn-brackets:hover:after {
+  content: "]";
+  display: inline-block;
+  position: absolute;
+  right: -4px;
+}
+
+
+// Cards
+.card-activity {
+  background-color: white;
+  border: 1px solid $main-bg-color;
+  border-radius: 20px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  transition: .3s all ease-in-out;
+
+  &:hover {
+    border: 1px solid $main-color;
+  }
+}
+
+.card-content-v {
+  padding: 10px;
+}
+
+.img-h {
+  height: 120px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.img-activity {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-title-activity {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 8px;
+}
+
+
+
+
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+  .img-activity {
+    height: 200px!important;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .hebergements-and-populaires {
+    flex-direction: column;
+  }
+
+  .hebergements {
+    width: 100%;
+  }
+
+  .populaires {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .populaires-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .populaires-cards a {
+    width: 30%;
+  }
+
+  .populaires-cards .card-title {
+    font-size: 14px;
+  }
+
+  .populaires-cards .card-subtitle {
+    font-size: 13px;
+  }
+}
+
+// Small devices (phones, less than 768px)
+@media (max-width: 767.98px) {
+  .img-activity {
+    height: 200px!important;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .populaires-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .populaires-cards a {
+    width: 100%;
+  }
+
+  .col-footer {
+    width: 100%;
+    padding: 20px;
+    gap: 15px;
+  }
+}
