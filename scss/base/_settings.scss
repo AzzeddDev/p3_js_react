@@ -28,6 +28,31 @@ footer {
   margin-top: 50px;
 }
 
+.conteneur {
+  width: 100%;
+  max-width: 1440px;
+}
+
+section .h2 {
+  margin: 25px 0 0 0!important;
+}
+
+#aligned-section {
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
 
 /******** row ********/
 .row {
