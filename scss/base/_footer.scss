@@ -1,8 +1,20 @@
 /****** Footer ***********/
-.col-footer {
-  width: 30%;
-  padding: 20px;
-  gap: 15px;
+.footer-flex {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: $black-gray;
+  padding: 80px 45px 25px 45px;
+  gap: 85px;
+}
+
+.home-footer-btn {
+  display: flex;
+}
+
+footer nav {
+  display: flex;
+  gap: 40px;
 }
 
 .footer-title {
@@ -11,14 +23,37 @@
   line-height: 21px;
 }
 
-.list-style {
+footer ul {
+  display: flex;
+  gap: 18px;
+  margin: 0;
   padding: 0;
+}
+
+footer a {
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+  color: $white;
+  line-height: 19px;
+  font-weight: 400;
+  padding: 0;
+  list-style: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+footer li {
   list-style: none;
 }
 
 .li-style {
-  font-size: 16px;
-  line-height: 19px;
-  font-weight: 400;
-  padding-bottom: 12px;
+  font-weight: 300;
+}
+
+.logo-btn-footer {
+  filter: invert(100%);
+  width: 120px;
 }
