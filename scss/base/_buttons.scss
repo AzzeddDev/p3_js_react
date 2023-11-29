@@ -1,0 +1,15 @@
+.btn-default {
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  color: $white;
+  padding: 14px 22px;
+  width: auto;
+  border-radius: 50px;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .18);
+  transition: .25s all ease-in-out;
+
+  &:hover {
+    background: linear-gradient(0deg, #9f68e8, #ff8fdc);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .28);
+  }
+}
