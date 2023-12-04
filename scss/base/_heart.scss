@@ -1,21 +1,20 @@
-.heart-show {
+.heart {
   display: block;
   position: relative;
   overflow: hidden;
-  transition: .3s all ease-in-out;
-}
 
-.heart-hide {
-  display: none;
-  position: absolute;
-  left: 0;
-  transition: .3s all ease-in-out;
-}
+  &__hide {
+    display: none;
+    position: absolute;
+    left: 0;
+  }
 
-.heart-show:hover .heart-hide {
-  display: block;
-  color: #9356DC;
-  animation: show-heart .3s ease-in-out;
+  &:hover &__hide {
+    display: block;
+    color: #9356DC;
+    animation: show-heart .3s ease-in-out;
+    animation-delay: 0s;
+  }
 }
 
 @keyframes show-heart {

@@ -18,4 +18,11 @@ header nav {
 .header__back {
   display: flex;
   align-items: center;
+  padding: 10px;
+  border-radius: 25px;
+  transition: .3s all ease-in-out;
+
+  &:hover {
+    background-color: #e7e7e7;
+  }
 }

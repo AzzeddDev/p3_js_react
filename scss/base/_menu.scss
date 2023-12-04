@@ -48,13 +48,6 @@
   padding: 14px 42px !important;
 }
 
-
-.menuItem {
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
-}
-
 .menuItem h3 {
   margin: 0 0 10px 0;
 }
@@ -90,38 +83,43 @@
 
 
 // Animation On Hover - Check
-
-.menuItem__plateHover {
-  display: flex;
-  align-items: center;
-  overflow: hidden;
+.menuItem {
+  background-color: #fff;
   border-radius: 12px;
-}
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
 
-.menuItem__header {
-  flex: 1;
-  padding: 15px;
-}
+  &__plateHover {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 12px;
+  }
 
-.menuItem__check {
-  display: flex;
-  background-color: #99E2D0;
-  height: 5rem;
-  width: 3rem;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  margin: -1rem -5.5rem -1rem 1rem;
-  transition-duration: 0.5s;
-}
+  &__header {
+    flex: 1;
+    padding: 15px;
+  }
 
-.menuItem__check i {
-  font-size: 1.5rem;
-  color: $white;
-}
+  &__check {
+    display: flex;
+    background-color: #99E2D0;
+    height: 5rem;
+    width: 3rem;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: -1rem -5.5rem -1rem 1rem;
+    transition-duration: 0.5s;
+  }
 
-.menuItem__plateHover:hover .menuItem__check {
-  margin-right: 0;
+  &__check i {
+    font-size: 1.5rem;
+    color: $white;
+  }
+
+  &__plateHover:hover .menuItem__check {
+    margin-right: 0;
+  }
 }
 
 
