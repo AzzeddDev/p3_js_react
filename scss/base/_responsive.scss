@@ -1,0 +1,97 @@
+/* Le code ci-dessous correspond à la version responsive uniquement */
+/****** Media queries ***********/
+
+/* Medium devices (tablets, less/equal than 1024px) */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/* Small devices (phones, less than 768px) */
+@media all and (max-width: 767px) {
+  body {
+    margin: 0!important;
+    width: auto!important;
+    padding: 0!important;
+  }
+
+  header nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    text-align: center;
+  }
+
+  // Geo/hero section
+  .hero h1 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+
+
+  // Fonctionnement section
+  .f-show-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-left: 11px;
+  }
+
+  .steps {
+    display: flex;
+    width: auto!important;
+    background-color: $bg-gray;
+    padding: 22px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+
+
+  // Resto Section
+  .restaurant-wrapper {
+    flex-direction: column!important;
+  }
+
+  .one-resto {
+    width: 100%!important;
+    border-radius: 16px;
+    background-color: #fff;
+    overflow: hidden;
+    border: 1px solid #fff;
+    transition: 0.3s all ease-in-out;
+  }
+
+
+
+
+
+ // Footer
+  footer {
+    flex-direction: column;
+    padding: 0!important;
+  }
+
+  .footer-flex {
+    flex-direction: column;
+    padding: 28px!important;
+    gap: 20px!important;
+    align-items: flex-start!important;
+  }
+
+  .footer-flex nav {
+    flex-direction: column;
+    order: 2!important;
+    gap: 20px!important;
+  }
+
+  footer ul {
+    flex-direction: column;
+  }
+
+  .home-footer-btn {
+    order: 1!important;
+    align-self: flex-start;
+  }
+}
