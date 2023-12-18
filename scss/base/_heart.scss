@@ -5,8 +5,13 @@
 
   &__hide {
     display: none;
+    font-size: 22px;
     position: absolute;
     left: 0;
+  }
+
+  &__show {
+    font-size: 22px;
   }
 
   &:hover &__hide {

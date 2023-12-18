@@ -94,4 +94,45 @@
     order: 1!important;
     align-self: flex-start;
   }
+
+
+  // Menu pages
+  #nav-plat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 42px;
+  }
+
+  .menuList {
+    width: auto!important;
+    padding: 20px!important;
+  }
+
+  .img-hero {
+    height: 350px!important;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .title_heart {
+    gap: 38px!important;
+    width: 100%!important;
+    justify-content: flex-start!important;
+  }
+
+  .menu__container {
+    flex: 1!important;
+    max-width: 100%!important;
+    padding: 0 15px;
+  }
+
+  .submenus {
+    padding: 0 15px;
+  }
+
+  .submenu {
+    flex: 1!important;
+    max-width: 100%!important;
+  }
 }
