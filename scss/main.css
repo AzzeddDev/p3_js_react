@@ -93,6 +93,17 @@ section .h2 {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
+@media all and (min-width: 767px) and (max-width: 980px) {
+  .f-show-flex {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 32px !important;
+    padding-left: 11px !important;
+  }
+  .steps {
+    width: auto !important;
+  }
+}
 /* Small devices (phones, less than 768px) */
 @media all and (max-width: 767px) {
   body {
@@ -100,14 +111,21 @@ section .h2 {
     width: auto !important;
     padding: 0 !important;
   }
+  header {
+    z-index: 99;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.01);
+  }
   header nav {
-    flex-direction: column;
+    padding: 30px 0 8px 0 !important;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1490196078);
   }
   nav a {
     text-align: center;
   }
   .hero h1 {
-    font-size: 24px;
+    font-size: 24px !important;
     font-weight: 700;
   }
   .f-show-flex {
@@ -156,6 +174,10 @@ section .h2 {
   .home-footer-btn {
     order: 1 !important;
     align-self: flex-start;
+  }
+  .header__back {
+    margin-top: -20px !important;
+    font-size: 24px !important;
   }
   #nav-plat {
     display: flex;
@@ -206,7 +228,9 @@ section .h2 {
 }
 .heart:hover .heart__hide {
   display: block;
-  color: #9356DC;
+  background: -webkit-linear-gradient(rgba(255, 121, 218, 0.8980392157), rgba(147, 86, 220, 0.8980392157));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   animation: show-heart 0.3s ease-in-out;
   animation-delay: 0s;
 }
@@ -308,6 +332,8 @@ header nav {
   display: flex;
   padding: 30px 0;
   justify-content: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1490196078);
 }
 
 .logo-btn-header {

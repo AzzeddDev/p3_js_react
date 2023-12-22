@@ -16,7 +16,9 @@
 
   &:hover &__hide {
     display: block;
-    color: #9356DC;
+    background: -webkit-linear-gradient(#FF79DAE5, #9356DCE5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     animation: show-heart .3s ease-in-out;
     animation-delay: 0s;
   }
